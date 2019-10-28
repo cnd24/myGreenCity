@@ -1,0 +1,671 @@
+:root {
+    --mainColor : #5BC74A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    height: 100%; 
+}
+
+body {
+    text-align: center;
+    /*display:flex;*/
+    flex-direction:column;
+    min-height: 100%;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4.0em;
+    color: var(--mainColor);
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Satisfy', cursive;
+    color: lightslategray;
+    font-size: 2.5em;
+    margin: 70px 0 50px 0;
+    font-weight: 500;
+}
+
+.background {
+    background-color: #F5F5F5;
+}
+
+
+/* ----------------------NAV-------------------------------------*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-start;   
+    align-items: center;
+}
+
+
+.logo-green {
+    width: 65px;
+    padding: 10px;
+}
+
+.liens {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+.liens a {
+    text-decoration: none;
+    padding: 0.5em;
+    margin-left: 1em;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: var(--mainColor);
+}
+
+.liens a:hover{
+    border-bottom: 2px var(--mainColor) solid;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.icon-burger, .close-burger {
+    display: none;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.close-burger img {
+    width: 15px;
+}
+
+.icon-burger img {
+    width: 35px;
+}
+
+.banner {
+    height: 400px;
+    background: no-repeat center / cover url("https://images.unsplash.com/photo-1526797072-6f5b4aec8421?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); 
+    box-shadow: 5px 5px 15px #4a6602;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.banner-text {
+    font-size : calc(50px + (100 - 50) * ((100vw - 360px) / (1600 - 360)));
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 2px white solid;
+    text-shadow: 0 0 0.2em #16772c;
+    font-family: 'Satisfy', cursive;
+
+}
+
+
+
+
+
+/* ----------------------ACTIONS-ASSOCIATIONS------------------------------------*/
+
+.actions{
+   margin-top:2rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   align-items:stretch;
+   align-content: space-between;
+   margin-bottom: 50px;
+}
+
+.imageVignette{
+    height:350px;
+    width:350px;
+    border-radius:10px;
+}
+
+.actions a {
+    display:flex;
+    justify-content:center;
+    color: var(--mainColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-transform:uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--mainColor);
+}
+
+.imageVignette:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+figcaption:hover{
+    font-weight: 600;
+}
+
+.btn-add a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-delete{
+    background-color: #C70822;
+}
+
+.btn-delete a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------------- PAGES ASSOCIATIONS -------------------------------------*/
+
+.informations{
+    display:flex;
+    padding:2rem;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.horaires{
+    margin-top:1rem;
+    width:25%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.horaires h3{
+    font-size: 1.7em;
+}
+
+.horaires p {
+    padding:1rem 1.2rem;
+}
+
+.imageDesktopAsso{
+    max-width: 23%;
+    align-self: center;
+}
+
+.imageMobileAsso{
+    display:none;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.description p {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.adresse{
+    font-style: italic;
+}
+
+
+/* ----------------------GESTION DES DECHETS-------------------------------------*/
+
+.gestion p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.textSizeMore {
+    font-size: 20px;
+}
+
+.conseils p:nth-of-type(1) {
+    padding-top: 0;
+}
+
+.conseils p:nth-of-type(5){
+    padding-bottom: 0;
+}
+
+.conseils {
+    display: flex;
+    justify-content: center; 
+}
+
+.imgConseil{
+    width: 500px;
+    border-radius: 10px;
+    margin:5px 40px 5px 5px;
+ }
+
+.textConseil{
+    width:50%;
+    padding: 0 10px;
+    margin: 5px;
+    background: linear-gradient(to bottom, #778899, #fff) no-repeat;
+    background-size: 2px 100%;
+    border-radius: 5px;
+}
+
+.collecte {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textCollecte{
+    width: 37vw;
+    padding: 0 70px 50px 50px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+summary {
+    font-size: 1.3em;
+    color: var(--mainColor);
+    text-align: left;
+    padding-bottom: 15px;
+
+}
+
+details {
+    text-align: justify;
+    padding: 0 20px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.06);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border-bottom: 1px var(--mainColor) solid;
+    color: var(--mainColor);
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+
+.mapsCollecte {
+    width: 35rem;
+    margin: 5px;
+    border-radius: 10px; 
+}
+
+/* ----------------------FORMULAIRE-------------------------------------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 70px 10px;
+    margin-top: 50px;
+}
+
+form li {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.button {
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.errorIndication {
+    color : #C70822;
+}
+
+label {
+    display: block;
+    width: 10rem;
+    text-align: right;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+input {
+    border-radius: 7px;
+    width:40rem;
+    margin: 0.6rem;
+    padding: 5px;
+}
+
+
+textarea {
+    border-radius: 7px;
+    width:40rem;
+    height:10rem;
+    margin: 0.6rem;
+    padding: 5px;
+}
+
+button {
+    margin:5px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    color:#ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 30vw;
+    cursor:pointer;
+}
+
+/* ----------------------FOOTER-------------------------------------*/
+
+.footerOnePart{
+    background-color: #3D8732;
+    color:#ffffff;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10% 30px 30px;
+}
+
+.footerOnePart a {
+    color: #ffffff;
+
+}
+
+.aPropos {
+    width:30%;
+
+
+}
+
+.aPropos div {
+     padding-bottom: 5px;
+ }
+
+.aPropos h3 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 2em;
+}
+
+.aPropos a{
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 5px;
+}
+
+.network {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footerTwoPart{
+    background-color: #3d8732;
+    border-top : 1px white solid;
+    height: 5vh;
+}
+
+
+
+/* ----%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%----------VERSION MOBILE-------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%------*/
+
+@media only screen and (max-width: 960px) {
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    h3 {
+        margin-top: 1em;
+    }
+
+/*-------------------------NAV ---------------------------------------------*/
+
+    .icon-burger, .close-burger {
+        display: block;
+    }
+
+    .liens {
+        display: none;
+    }
+
+    .liens:target {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        width: 90vw;
+        height: 100vh;
+        align-items: flex-start;
+        top: 0;
+        left: 10vw;
+        padding: 20px;
+        box-shadow: 5px 5px 15px #4a6602;
+    }
+
+    .liens:target li{
+        padding: 20px 100vw 20px 0;
+        border-bottom: 1px #DCDCDC solid;
+
+    }
+
+    .liens:target .liens {
+        padding-top: 50px;
+    }
+
+    .liens:target a {
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .liens:target a:hover {
+        border: none;
+    }
+
+    .liens:target .close-burger {
+        position: absolute;
+        right: 3vw;
+    }
+
+
+    /*--------------------------ACTIONS-----------------------------------------------------*/
+
+    .imageVignette{
+        height:300px;
+        width:300px;
+        border-radius:10px;
+
+    }
+
+    .actions a{
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+
+
+/*---------------------- GESTION ----------------------*/
+
+    .conseils{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .imgConseil {
+        width: 70%;
+        padding: 2px;
+        border-radius: 10px;
+
+    }
+
+    .textConseil {
+        width: 90%;
+    }
+
+    .collecte {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textCollecte {
+        width: 90%;
+        padding: 10px;
+    }
+
+    summary {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    summary:hover {
+        letter-spacing: normal;
+    }
+
+    details {
+        padding: 10px;
+    }
+
+    .mapsCollecte{
+        width: 90%;
+    }
+
+    /*----------------PAGE ASSOCIATIONS---------------------------*/
+
+    .imageDesktopAsso{
+        display:none;
+    }
+
+    .imageMobileAsso{
+        display: block;
+        /*height: 90%;*/
+        width: 90%;
+        margin:0 auto;
+    }
+
+    .informations{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+
+    }
+    .horaires{
+        width: 100%;
+
+    }
+    .informations p{
+        margin:2%;
+        text-align: center;
+
+    }
+
+    .description {
+        width: 90%;
+    }
+    .description p{
+        margin: 1%;
+    }
+
+
+    /* ---------------------- FORMULAIRE ---------------------------------------*/
+
+    form li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:90%;
+    }
+
+
+    label {
+        width:auto;
+        margin: 0;
+    }
+
+    input {
+        height: 40px;
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+    textarea {
+        margin: 0.5rem;
+        width: 100%;
+    }
+
+/* ------------------------- FOOTER ---------------------------------------- */
+
+    .footerOnePart {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .aPropos {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .networks {
+        border-bottom: solid 1px #3b5833;
+        padding:1rem 0 1rem 0;
+    }
+
+    .networks p {
+        display: none;
+    }
+
+    .links {
+        margin-top:0;
+        display:block;
+    }
+
+    .links a {
+        display: block;
+        border-bottom: solid 1px #3b5833;
+        padding: 1.5rem;
+    }
+}

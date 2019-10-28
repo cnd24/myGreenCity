@@ -1,0 +1,263 @@
+/* ----------------------GENERAL-------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    height: 100%; 
+}
+
+body {
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    min-height: 100%;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4.0em;
+    color:#5BC74A;
+    margin-top: 70px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Satisfy', cursive;
+    color: lightslategray;
+    font-size: 2.5em;
+    margin: 50px 0;
+    font-weight: 500;
+}
+
+.bg {
+   /* background-color:#D4E39C;*/
+   background-image: url(img/bg.png);
+}
+
+
+
+/* ----------------------FIN GENERAL-------------------------------------*/
+
+/* ----------------------NAV-------------------------------------*/
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-start;   
+    align-items: center;
+}
+
+
+.logo-green {
+    width: 65px;
+    padding: 10px;
+}
+
+.liens {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+.liens a {
+    text-decoration: none;
+    padding: 0.5em;
+    margin-left: 1em;
+    font-weight: 550;
+    font-size: 1.1em;
+    color: #5BC74A;
+}
+
+.liens a:hover{
+    border-bottom: 2px #5BC74A solid;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.icon-burger, .close-burger {
+    display: none;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.close-burger img {
+    width: 15px;
+}
+
+.icon-burger img {
+    width: 35px;
+}
+
+/* ---------------------- FIN NAV-------------------------------------*/
+
+
+
+
+/* ---------------------- FIN CONTENU PRINCIPAL -------------------------------------*/
+
+/* --------------------FOOTER-----------------------------*/
+footer {
+    background-color: #3D8732;
+    color:#ffffff;
+    margin-top: auto;   
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+footer a {
+    color: #ffffff;
+
+}
+
+.item {
+    width:30%;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.links {
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 5px;
+}
+
+.network {
+    height:50px;
+    width:50px;
+}
+
+/* ----------------------VERSION MOBILE-------------------------------------*/
+
+@media only screen and (max-width: 960px) {
+
+    h1 {
+        margin-top: 6rem;
+    }
+
+    h2 {
+        margin-top: 70px;
+    }
+
+    h3 {
+        margin-top: 50px;
+    }
+
+    /**** footer ****/
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; 
+        padding: 10px;   
+    }
+    
+    .item {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .networks {
+        border-bottom: solid 1px #3b5833;
+        padding:1rem 0 1rem 0;
+    }
+    
+    .networks p {
+        display: none;
+    }
+    
+    .links {
+        margin-top:0;
+        display:block;
+    }
+    
+    .links a {
+        display: block;
+        border-bottom: solid 1px #3b5833;
+        padding: 1.5rem;
+    }
+    
+
+    /****** fin footer ******/
+
+    /*-- nav */
+    
+    .icon-burger, .close-burger {
+        display: block;
+    }
+    
+    .liens {
+        display: none;
+    }
+    
+    .liens:target {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: white;
+        width: 90vw;
+        height: 100vh;
+        top: 50px;
+        align-items: flex-start;
+        top: 0;
+        left: 10vw;
+        padding: 20px;
+        box-shadow: 5px 5px 15px #4a6602;
+    }
+    
+    .liens:target li{
+        padding: 20px 30px 20px 0px;
+        padding-right: 100vw;
+        border-bottom: 1px #DCDCDC solid;
+       
+    }
+    
+    .liens:target .liens {
+        padding-top: 50px;
+    }
+    
+    .liens:target a {
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .liens:target a:hover {
+        border: none;
+    }
+    
+    .liens:target .close-burger {
+        position: absolute;
+        right: 3vw;
+    }
+
+
+}
